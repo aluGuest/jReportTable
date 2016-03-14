@@ -50,9 +50,9 @@ $(document).ready(function()
 	        iconOrderClassDesc: 'fa fa-long-arrow-down', // Optional sort icon DOWN
 	        // Optional pagination information (the values here are the defuault ones )
 	        pagination: {
-	        	class: 'ul.pagination',
-	        	item: 'li',
-	        	link: 'a',
+	        	container: 'ul.pagination',
+	        	item: 'li', // DOM item (may be a selector but must be relative to container)
+	        	link: 'a', // DOM item (may be a selector but must be relative to item)
 	        	itemClass: 'r-page',
 				previousHTML: '&laquo;',
 	        	previousClass: 'r-previous',
