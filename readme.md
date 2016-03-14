@@ -4,24 +4,26 @@ jReportTable is a jQuery plugin for dynamic tables with pagination, filtering an
 ----------
 
 ## How to use?##
-If you have several tables with the class "report-table" you simply call:
+If you have several tables with the class "table-container" you simply call:
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.jReportTable.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
-		$('#mycontainer').jReportTable();
+		$('.table-container').jReportTable();
 	});
     </script>
 
 HTML:
 
-    <div id="mycontainer">
+    <div class="table-container">
 	    <select class="r-pagelength"></select>
 	    <input class="r-search"/><br/>
 		<table></table><br/>
 		<ul class="pagination"></ul>
 	</div>
+
+If you do want a search bar, remove the item, if you do want a page length selector, remove the item, and so on.
 
 ## Usage##
     var preload = [
