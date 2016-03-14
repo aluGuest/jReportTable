@@ -1,3 +1,29 @@
+## jReportTable ##
+jReportTable is a jQuery plugin for dynamic tables with pagination, filtering and ajax loading, it is also data agnostic, and does not need columns definition.
+
+----------
+
+## How to use?##
+If you have several tables with the class "report-table" you simply call:
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.jReportTable.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#mycontainer').jReportTable();
+	});
+    </script>
+
+HTML:
+
+    <div id="mycontainer">
+	    <select class="r-pagelength"></select>
+	    <input class="r-search"/><br/>
+		<table></table><br/>
+		<ul class="pagination"></ul>
+	</div>
+
+## Usage##
     var preload = [
     	{"Name": "Airi Satou", "Position": "Accountant", "Office": "Tokyo", "Age": "33", "Start date": "2008/11/28", "Salary": "$162,700"},
     	{"Name": "Angelica Ramos", "Position": "Chief Executive Officer (CEO)", "Office": "London", "Age": "47", "Start date": "2009/10/09", "Salary": "$1,200,000"},
